@@ -1,0 +1,19 @@
+{
+  "name": "crud-node",
+  "version": "1.0.0",
+  "description": "Crud en Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Luciano Pardo",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
