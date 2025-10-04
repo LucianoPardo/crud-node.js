@@ -3,9 +3,8 @@ require('dotenv').config();
 const express = require("express");
 const app = express();
 
-app.get('/', (req, res) =>{
-    res.send("Hola Mundo!");
-});
+const mainRouter = require('./src/routes/main.router');
+app.use(mainRouter);
 
 const PORT = process.env.PORT || 3001;
 
