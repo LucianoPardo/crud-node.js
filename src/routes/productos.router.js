@@ -1,10 +1,10 @@
-const express = require ('express');
+const express = require("express");
 const router = express.Router();
 
-router.get('/productos', (req, res) =>{
-    fetch('https://fakestoreapi.com/products')
-        .then(response => response.json())
-        .then(data => console.log(data));
-});
+const controller = require("../controllers/productos.controllers");
+
+router.get("/", controller.index);
+
+router.get("/:id", controller.show);
 
 module.exports = router;
